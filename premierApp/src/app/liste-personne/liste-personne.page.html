@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+     <ion-title>listePersonne</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    
+       
+      
+      <ion-grid >
+          <div class="row header" style="border: think solid black;">
+         <ion-row>
+            <ion-col>
+                <div class="col">id</div>
+            </ion-col>
+            <ion-col>
+                <div class="col">nom</div>
+            </ion-col>
+            <ion-col>
+                <div class="col">Prenom</div>
+            </ion-col>  
+          </ion-row>
+            </div>
+            <div *ngFor="let p of personne">
+          <ion-row>
+            <ion-col>
+                {{p.id}}
+            </ion-col>
+            <ion-col>
+                {{p.nom}}
+            </ion-col>
+            <ion-col>
+                {{p.prenom}}
+            </ion-col>  
+          </ion-row>
+         </div>
+        </ion-grid>
+     
+</ion-content>
